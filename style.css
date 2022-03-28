@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 2580px;
+    width: 100%;
+    font-family:'Roboto';
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.logobuscador {
+    
+    display: flex;
+    margin: auto;
+    width: 20%;
+    height: auto;
+}
+.logobuscador img {
+    margin-top: 15px;
+    width: 100%;
+}
+.menu {
+    margin: auto;
+    height: 60px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    padding-top: 19px;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.315);
+    transform: scale(1.2,1.2);
+}
+main {
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(231, 231, 231, 0.452) , white);
+}
+footer {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #111111;
+    position: fixed;
+    bottom: 0;
+    overflow: visible;
+}
+.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 550px 550px 550px 900px 600px 200px;
+}
+.inicio {
+    width: 100%;
+}
+h1{ 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.caja {
+    width: 100%;
+    height: 430px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tarjeta {
+    width: 20%;
+    height: 410px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+.caja .tarjeta img{
+ width: 100%;
+ height: 220px;
+}
+h4{
+    margin: 20px;
+}
+h5 {
+    margin-top: 10px;
+}
+.envios iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.div-envios {
+    width: 60%;
+    text-align: center;
+    margin: 40px auto;
+}
+.mapa {
+    width: 60%;
+    margin: 40px auto;
+
+}
+.contacto {
+    width: 60%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formulario {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+}
+.formulario form {
+    margin: 0;
+    padding: 40px;
+}
+.formulario form input,
+.formulario form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #181818;
+}
+.formulario form button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+}
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #181818;
+    margin-top: 20px;
+    animation-name: ladoalado;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+}
+@keyframes ladoalado {
+    0% {left: 0px;}
+    50% {left: 500px;}
+    100% {left: 0px;}
+}
+@media (max-width: 575px) {
+    .grid {
+        grid-auto-rows: 550px 550px 550px 1000px 600px;
+    }
+    .div-envios {
+        font-size: small;
+    }
+    .menu {
+        font-size: small;
+    }
+    }
